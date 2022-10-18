@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/hamburger.css">
+</head>
+<body>
+    <section id="wrapper">
+        <div class="carousel" data-carousel>
+          <div class="carousel-buttons">
+            <button
+              class="carousel-button carousel-button_previous"
+              data-carousel-button-previous
+            >
+            <span class="">
+              <img src="./images/svg/arrow-left.svg" alt="">
+              </span>
+            </button>
+            <button class="carousel-button carousel-button_next"
+              data-carousel-button-next
+            >
+            <span class="">
+              <img src="./images/svg/arrow-right.svg" alt="">
+              </span>
+            </button>
+          </div>
+
+          <div class="col">
+            <div onclick="goBack()" class="con">
+              <div class="bar arrow-top-r"></div>
+              <div class="bar arrow-middle-r"></div>
+              <div class="bar arrow-bottom-r"></div>
+            </div>
+          </div>
+
+          <!--Slide 1-->
+          <div class="slides" data-carousel-slides-container>
+            <div class="slide h-screen bg-cover bg-center" style="background-image: url('./images/halls/left.png')">
+              <div class="wrapper h-full">
+              <div class="flex flex-row justify-center items-center -ml-12 md:-ml-32 lg:-ml-48 mt-0 md:-mt-16 md:min-h-full md:content-center">
+                <div class="w-40 lg:w-64 h-min -ml-10 md:ml-0 mt-16 md:mt-8 lg:-mt-4 bg-cover bg-center">
+                  
+                      <img src="./images/gallery/afro-iran/afrointro.png" class="zoomD" alt="">
+                  
+              </div>
+            </div>
+            </div>
+            </div>
+
+
+            <!--Slide 2-->
+            <div class="slide h-screen bg-cover bg-center" style="background-image: url('./images/halls/middle.png')">
+              <div class="wrapper h-full">
+              <div class="flex flex-row justify-center items-center ml-4 md:ml-0 lg:ml-0 mt-32 md:mt-0 md:min-h-full md:content-center">
+                <div class="w-12 lg:w-28 h-min md:ml-12 lg:-mt-4 bg-cover bg-center">
+                      <img src="./images/gallery/afro-iran/afro1.jpg" class="zoomE cursor-zoom-in" alt="">
+                      <div class="flex flex-col m-auto w-12 lg:w-16 h-4 lg:h-8 mt-2">
+                        <img src="./images/gallery/afro-iran/cards/afro1card.png" class=" hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                      </div>   
+              </div>
+              <div class="w-24 lg:w-40 h-min ml-2 md:ml-12 lg:-mt-4 bg-cover bg-center">
+                    <img src="./images/gallery/afro-iran/afro2.jpg" class="zoomE cursor-zoom-in" alt="">
+                    <div class="flex flex-col m-auto w-12 lg:w-16 h-4 lg:h-8 mt-2">
+                      <img src="./images/gallery/afro-iran/cards/afro2card.png" class=" hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                    </div>
+            </div>
+                <div class="w-12 lg:w-24 h-min ml-2 md:ml-12 lg:-mt-4 bg-cover bg-center">
+                      <img src="./images/gallery/afro-iran/afro3.jpg" class="zoomE cursor-zoom-in" alt="">
+                      <div class="flex flex-col m-auto w-12 lg:w-16 h-4 lg:h-8 mt-2">
+                        <img src="./images/gallery/afro-iran/cards/afro3card.png" class=" hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                      </div>  
+              </div>
+            </div>
+            </div>
+            </div>
+
+
+            <!--Slide 3-->
+            <div class="slide h-screen bg-cover bg-center" style="background-image: url('./images/halls/middle.png')">
+              <div class="wrapper h-full">
+              <div class="flex flex-row justify-center items-center ml-8 md:ml-0 lg:ml-0 mt-32 md:mt-0 md:min-h-full md:content-center">
+                <div class="w-12 lg:w-24 h-min md:ml-12 lg:-mt-4 bg-cover bg-center">
+                      <img src="./images/gallery/afro-iran/afro4.jpg" class="zoomE cursor-zoom-in" alt="">
+                      <div class="flex flex-col m-auto w-12 lg:w-16 h-4 lg:h-8 mt-2">
+                        <img src="./images/gallery/afro-iran/cards/afro4card.png" class=" hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                      </div>                 
+              </div>
+              <div class="w-28 lg:w-36 h-min ml-2 md:ml-12 lg:-mt-4 bg-cover bg-center">                
+                    <img src="./images/gallery/afro-iran/afro5.jpg" class="zoomE cursor-zoom-in" alt="">
+                    <div class="flex flex-col m-auto w-12 lg:w-16 h-4 lg:h-8 mt-2">
+                      <img src="./images/gallery/afro-iran/cards/afro5card.png" class=" hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                    </div>               
+            </div>
+            <div class="w-20 lg:w-28 h-min ml-2 md:ml-12 lg:-mt-4 bg-cover bg-center">
+                  <img src="./images/gallery/afro-iran/afro6.jpg" class="zoomE cursor-zoom-in" alt="">
+                  <div class="flex flex-col m-auto w-12 lg:w-16 h-4 lg:h-8 mt-2">
+                    <img src="./images/gallery/afro-iran/cards/afro6card.png" class=" hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                  </div>
+            </div>
+            </div>
+            </div>
+            </div>
+
+            <!--Slide 4-->
+            <div class="slide h-screen bg-cover bg-center" style="background-image: url('./images/halls/middle.png')">
+              <div class="wrapper h-full">
+              <div class="flex flex-row justify-center items-center ml-6 md:ml-0 lg:ml-0 mt-32 md:mt-0 md:min-h-full md:content-center">
+                <div class="w-28 lg:w-36 h-min md:ml-12 lg:-mt-4 bg-cover bg-center">    
+                      <img src="./images/gallery/afro-iran/afro7.jpg" class="zoomE cursor-zoom-in" alt="">
+                      <div class="flex flex-col m-auto w-12 lg:w-16 h-4 lg:h-8 mt-2">
+                        <img src="./images/gallery/afro-iran/cards/afro7card.png" class=" hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                      </div>             
+              </div>
+              <div class="w-12 lg:w-28 h-min ml-2 md:ml-12 lg:-mt-4 bg-cover bg-center">              
+                    <img src="./images/gallery/afro-iran/afro8.jpg" class="zoomE cursor-zoom-in" alt="">
+                    <div class="flex flex-col m-auto w-12 lg:w-16 h-4 lg:h-8 mt-2">
+                      <img src="./images/gallery/afro-iran/cards/afro8card.png" class=" hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                    </div>               
+            </div>
+            <div class="w-16 lg:w-28 h-min ml-2 md:ml-12 lg:-mt-4 bg-cover bg-center">           
+                  <img src="./images/gallery/afro-iran/afro9.jpg" class="zoomE cursor-zoom-in" alt="">
+                  <div class="flex flex-col m-auto w-12 lg:w-16 h-4 lg:h-8 mt-2">
+                    <img src="./images/gallery/afro-iran/cards/afro9card.png" class=" hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                  </div>           
+            </div>
+            </div>
+            </div>
+            </div>
+
+
+            <!--Slide 5-->
+            <div class="slide h-screen bg-cover bg-center" style="background-image: url('./images/halls/middle.png')">
+              <div class="wrapper h-full">
+              <div class="flex flex-row justify-center items-center ml-12 md:ml-0 lg:ml-0 mt-32 md:mt-0 md:min-h-full md:content-center">
+                <div class="w-14 md:w-20 lg:w-28 h-min md:ml-12 lg:-mt-4 bg-cover bg-center">               
+                      <img src="./images/gallery/afro-iran/afro10.jpg" class="zoomE cursor-zoom-in" alt="">
+                      <div class="flex flex-col m-auto w-12 lg:w-16 h-4 lg:h-8 mt-2">
+                        <img src="./images/gallery/afro-iran/cards/afro10card.png" class=" hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                      </div>        
+              </div>
+              <div class="w-28 lg:w-36 h-min ml-4 md:ml-12 lg:-mt-4 bg-cover bg-center">  
+                    <img src="./images/gallery/afro-iran/afro11.jpg" class="zoomE cursor-zoom-in" alt="">
+                    <div class="flex flex-col m-auto w-12 lg:w-16 h-4 lg:h-8 mt-2">
+                      <img src="./images/gallery/afro-iran/cards/afro11card.png" class=" hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                    </div> 
+            </div>
+            </div>
+            </div>
+            </div>
+
+          </div>
+       </div>
+    </section>   
+    <div id="warning-message">
+      <img class="warningLogo" src="./images/logo/logo.png" alt="website logo">
+      <h2>this website is only viewable in landscape mode</h2>
+    </div>
+    <script src="../src/js/carousel.js"></script> 
+    <script src="../src/js/main.js"></script>  
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="stylesheet" href="./css/nav.css">
+</head>
+<body>
+    <section class="wrapper">
+            <div class="flex h-screen bg-cover bg-center justify-center"  style="background-image: url('./images/halls/middle.png')">
+                <!--  -->
+                <!-- <div class="flex flex-col justify-center">
+                    <img class="mb-2" src="./images/logo/logo.png" alt="logo">
+                    <h2 class="text-3xl font-bold">Coming Soon!</h2>
+                </div> -->
+                <!-- <div> -->
+                    <!--Timer-->
+                <!-- </div> -->
+                <!-- <ul class="boxArea">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul> -->
+
+                
+
+<!-- Noscript content for added SEO -->
+
+<noscript><a href="https://www.eventbrite.com/e/myouseeem-presents-the-legacy-ball-tickets-295729533997" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a></noscript>
+
+<!-- You can customize this button any way you like -->
+
+<button id="eventbrite-widget-modal-trigger-295729533997" type="button">
+    <img class="w-1/4 flex m-auto" src="./images/gallery/events/legacyball.png" alt="">
+</button>
+
+
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+
+<script type="text/javascript">
+
+    var exampleCallback = function() {
+
+        console.log('Order complete!');
+
+    };
+
+
+    window.EBWidgets.createWidget({
+
+        widgetType: 'checkout',
+
+        eventId: '295729533997',
+
+        modal: true,
+
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-295729533997',
+
+        onOrderComplete: exampleCallback
+
+    });
+
+</script>
+            </div>
+        </section>
+</body>
+</html>

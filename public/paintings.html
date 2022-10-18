@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYouSeeEm- Paintings</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/logo/logo.png" />
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/hamburger.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <section id="wrapper">
+        <div class="carousel" data-carousel>
+          <div class="carousel-buttons">
+            <button
+              class="carousel-button carousel-button_previous"
+              data-carousel-button-previous
+            >
+            <span class="">
+              <img src="./images/svg/arrow-left.svg" alt="">
+              </span>
+            </button>
+            <button class="carousel-button carousel-button_next"
+              data-carousel-button-next
+            >
+            <span class="">
+              <img src="./images/svg/arrow-right.svg" alt="">
+              </span>
+            </button>
+          </div>
+
+          <div onclick="goBack()" class="col">
+            <div class="con">
+              <div class="bar arrow-top-r"></div>
+              <div class="bar arrow-middle-r"></div>
+              <div class="bar arrow-bottom-r"></div>
+            </div>
+          </div>
+
+          <div class="slides" data-carousel-slides-container>
+
+
+            <div class="slide h-screen bg-cover bg-center" style="background-image: url('./images/halls/left.png')">
+              <div class="wrapper h-full">
+              <div class="flex flex-row justify-center items-center -ml-24 md:-ml-32 lg:-ml-48 mt-32 md:-mt-2 md:min-h-full md:content-center">
+                <div class="w-16 lg:w-32 h-min md:ml-12 bg-cover bg-center">
+                        <img src="./images/gallery/paint/potw1.jpg" class="zoomE cursor-zoom-in" alt="">
+                        <div class="flex flex-col m-auto w-12 lg:w-20 h-4 lg:h-8 mt-2">
+                          <img src="./images/gallery//paint/cards/potw1card.png" class="hover:bg-purple-500 duration-200 cursor-pointer zoomE"  alt="">
+                          <!-- <h4 class="text-xxs font-bold p-1">"Broken"</h4>
+                          <p class="text-xxs pl-1 -mt-1 leading-tight truncate">Pain so deep you could drown
+                          </p> -->
+                        </div>
+                </div>
+                <div class="w-16 lg:w-28 h-min ml-2 md:ml-12 bg-cover bg-center">
+                  <img src="./images/gallery/paint/potw2.jpg" class="zoomE cursor-zoom-in" alt="">
+                    <div class="flex flex-col m-auto w-12 lg:w-24 h-4 lg:h-8 mt-2">
+                      <img src="./images/gallery//paint/cards/potw2card.png" class="hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                      <!-- <h4 class="text-xxs font-bold p-1">Rebirth</h4>
+                      <p class="text-xxs pl-1 -mt-1 leading-tight truncate">There’s only powerful and positive change waiting to be experienced 
+                      </p> -->
+                    </div>
+                </div>
+                <div class="w-14 lg:w-24 h-auto ml-2 md:ml-12 bg-cover bg-center">
+                  <img src="./images/gallery/paint/potw3.jpg" class="zoomE cursor-zoom-in" alt="">
+                    <div class="flex flex-col m-auto w-12 lg:w-20 h-4 lg:h-8 mt-2">
+                      <img src="./images/gallery//paint/cards/potw3card.png" class="hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                      <!-- <h4 class="text-xxs font-bold p-1">Untitled</h4>
+                      <p class="text-xxs pl-1 -mt-1 leading-tight truncate">It wasn't exactly love at first sight, but it was deeper than that. A sense of belonging to a .
+                      </p> -->
+                    </div>    
+                </div>
+            </div>
+            </div>
+            </div>
+
+
+
+            <div class="slide h-screen bg-cover bg-center" style="background-image: url('./images/halls/middle.png')">
+              <div class="wrapper h-full">
+              <div class="flex flex-row justify-center items-center -ml-12 md:-ml-32 lg:-ml-40 mt-32 md:-mt-2 md:min-h-full md:content-center">
+                <div class="w-16 lg:w-32 h-min md:ml-32 bg-cover bg-center">
+                  <h2 class="text-2xl lg:text-4xl font-bold text-purple-500">WORDS</h2>
+                </div>
+                <div class="w-16 md:w-24 lg:w-36 h-min ml-8 md:ml-12 bg-cover bg-center">
+                  <img src="./images/gallery/paint/potw4.jpg" class="zoomE cursor-zoom-in" alt="">
+                </div>
+                <div class="w-14 lg:w-24 h-auto md:ml-12 ml-4 lg:ml-4 bg-cover bg-center">
+                    <div class="flex flex-col m-auto w-24 lg:w-44 h-12 lg:h-20 mt-2">
+                      <img src="./images/gallery//paint/cards/potw4card.png" class="hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                      <!-- <h4 class="md:text-xxs lg:text-xs font-bold p-1">Words</h4>
+                      <p class="text-xxs p-1 -mt-1 leading-tight text-ellipsis overflow-hidden">The longest and most impactful relationship we will ever have; that dictates how we give and how we indicate to others that we are willing to receive love, is with the same person we rip apart on a consistent basis...
+                      </p> -->
+                    </div>    
+                </div>
+            </div>
+            </div>
+            </div>
+
+              <div class="slide h-screen bg-cover bg-center" style="background-image: url('./images/halls/middle.png')">
+                <div class="wrapper h-full">
+                <div class="flex flex-row justify-center items-center ml-8 md:-ml-0 lg:-ml-0 mt-32 md:mt-0 md:min-h-full md:content-center">
+                  <div class="w-16 lg:w-32 h-min md:ml-12 lg:-mt-4 bg-cover bg-center">
+                        <img src="./images/gallery/paint/paintingsonthewall.jpg" class="zoomE cursor-zoom-in" alt="">
+                        <div class="flex flex-col m-auto w-12 lg:w-20 h-4 lg:h-8 mt-2">
+                          <img src="./images/gallery//paint/cards/potw5card.png" class="hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                          <!-- <h4 class="text-xxs font-bold p-1">"Broken"</h4>
+                          <p class="text-xxs pl-1 -mt-1 leading-tight truncate">Pain so deep you could drown
+                          </p> -->
+                        </div>
+                </div>
+                <div class="w-16 lg:w-28 h-min ml-2 md:ml-12 lg:-mt-4 bg-cover bg-center">
+                      <img src="./images/gallery/paint/potw6.jpg" class="zoomE cursor-zoom-in" alt="">
+                      <div class="flex flex-col m-auto w-12 lg:w-20 h-4 lg:h-8 mt-2">
+                        <img src="./images/gallery//paint/cards/potw6card.png" class="hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                        <!-- <h4 class="text-xxs font-bold p-1">"Broken"</h4>
+                        <p class="text-xxs pl-1 -mt-1 leading-tight truncate">Pain so deep you could drown
+                        </p> -->
+                      </div>
+              </div>
+              <div class="w-16 lg:w-32 h-min ml-2 md:ml-12 lg:-mt-2 bg-cover bg-center">
+                    <img src="./images/gallery/paint/potw7.jpg" class="zoomE cursor-zoom-in" alt="">
+                    <div class="flex flex-col m-auto w-12 lg:w-20 h-4 lg:h-8 mt-2">
+                      <img src="./images/gallery//paint/cards/potw7card.png" class="hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                      <!-- <h4 class="text-xxs font-bold p-1">"Broken"</h4>
+                      <p class="text-xxs pl-1 -mt-1 leading-tight truncate">Pain so deep you could drown
+                      </p> -->
+                    </div>
+            </div>
+                  </div>
+                  </div>
+              </div>
+
+
+              <div class="slide h-screen bg-cover bg-center" style="background-image: url('./images/halls/middle.png')">
+                <div class="wrapper h-full">
+                <div class="flex flex-row justify-center items-center ml-0 md:-ml-0 lg:-ml-0 mt-32 md:-mt-2 md:min-h-full md:content-center">
+                      <div class="w-16 lg:w-28 h-min ml-2 md:ml-12 lg:-mt-2 bg-cover bg-center">
+                            <img src="./images/gallery/paint/potw8.jpg" class="zoomE cursor-zoom-in" alt="">
+                            <div class="flex flex-col m-auto w-12 lg:w-20 h-4 lg:h-8 mt-2">
+                              <img src="./images/gallery//paint/cards/potw8card.png" class="hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                              <!-- <h4 class="text-xxs font-bold p-1">"Broken"</h4>
+                              <p class="text-xxs pl-1 -mt-1 leading-tight truncate">Pain so deep you could drown
+                              </p> -->
+                            </div>
+                    </div>
+                    <div class="w-24 lg:w-40 h-min ml-2 md:ml-12 lg:-mt-2 bg-cover bg-center">
+                          <img src="./images/gallery/paint/potw9.jpg" class="zoomE cursor-zoom-in" alt="">
+                          <div class="flex flex-col m-auto w-12 lg:w-20 h-4 lg:h-8 mt-2">
+                            <img src="./images/gallery//paint/cards/potw9card.png" class="hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                            <!-- <h4 class="text-xxs font-bold p-1">"Broken"</h4>
+                            <p class="text-xxs pl-1 -mt-1 leading-tight truncate">Pain so deep you could drown
+                            </p> -->
+                          </div>
+                   
+                  </div>
+                  <div class="w-16 lg:w-28 h-min ml-2 md:ml-12 lg:-mt-2 bg-cover bg-center">
+                  
+                        <img src="./images/gallery/paint/potw10.jpg" class="zoomE cursor-zoom-in" alt="">
+                        <div class="flex flex-col m-auto w-12 lg:w-20 h-4 lg:h-8 mt-2">
+                          <img src="./images/gallery//paint/cards/potw10card.png" class="hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                          <!-- <h4 class="text-xxs font-bold p-1">"Broken"</h4>
+                          <p class="text-xxs pl-1 -mt-1 leading-tight truncate">Pain so deep you could drown
+                          </p> -->
+                        </div>
+                    
+                </div>
+              </div>
+              </div>
+              </div>
+
+              <div class="slide h-screen bg-cover bg-center" style="background-image: url('./images/halls/middle.png')">
+                <div class="wrapper h-full">
+                <div class="flex flex-row justify-center items-center -ml-12 md:-ml-36 lg:-ml-40 mt-32 md:-mt-2 md:min-h-full md:content-center">
+                  <div class="w-32 lg:w-32 h-min md:ml-32 bg-cover bg-center">
+                    <h2 class="text-xs md:text-base lg:text-2xl font-bold text-center relative md:-left-8">The Miseducation Of The Negro 
+                    </h2>
+                  </div>
+                  <div class="w-20 lg:w-32 h-min md:ml-4 lg:-mt-4 bg-cover bg-center">
+                    
+                        <img src="./images/gallery/paint/potw11.jpg" class="zoomE cursor-zoom-in" alt="">
+                        <div class="flex flex-col m-auto w-12 lg:w-20 h-4 lg:h-8 mt-2 md:-mt-8">
+                          <img src="./images/gallery//paint/cards/potw11card_2.png" class="zoomE" alt="">
+                        </div>
+                   
+                </div>
+                  <div class="w-14 lg:w-24 h-auto ml-2 md:ml-4 lg:ml-4 -mt-4 bg-cover bg-center">
+                      <div class="flex flex-col m-auto w-24 lg:w-44 h-12 lg:h-20 mt-0">
+                        <img src="./images/gallery//paint/cards/potw11card.png" class="hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                        <!-- <p class="text-xxs md:text-xs p-1 -mt-1 leading-tight">“The so-called modern education, with all its defects, however, does others so much more good than it does the Negro, because it has been worked out in conformity to the needs of those who have enslaved and oppressed weaker peoples.”
+                          - Carter G. Woodson
+                        </p> -->
+                      </div>    
+                  </div>
+              </div>
+              </div>
+              </div>
+
+
+              <div class="slide h-screen bg-cover bg-center" style="background-image: url('./images/halls/right.png')">
+                <div class="wrapper h-full">
+                <div class="flex flex-row justify-center items-center ml-20 md:ml-20 lg:ml-32 mt-32 md:-mt-2 md:min-h-full md:content-center">
+                  <div class="w-16 lg:w-28 h-min md:ml-12 lg:-mt-2 bg-cover bg-center"> 
+                        <img src="./images/gallery/paint/potw12.jpg" class="zoomE cursor-zoom-in" alt="">
+                        <div class="flex flex-col m-auto w-12 lg:w-20 h-4 lg:h-8 mt-2">
+                          <img src="./images/gallery//paint/cards/potw12card.png" class="hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                          <!-- <h4 class="text-xxs font-bold p-1">"Broken"</h4>
+                          <p class="text-xxs pl-1 -mt-1 leading-tight truncate">Pain so deep you could drown
+                          </p> -->
+                        </div>
+                   
+                </div>
+                <div class="w-16 lg:w-28 h-min ml-2 md:ml-12 lg:-mt-2 bg-cover bg-center">
+                 
+                      <img src="./images/gallery/paint/potw13.jpg" class="zoomE cursor-zoom-in" alt="">
+                      <div class="flex flex-col m-auto w-12 lg:w-20 h-4 lg:h-8 mt-2">
+                        <img src="./images/gallery//paint/cards/potw13card.png" class="hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                        <!-- <h4 class="text-xxs font-bold p-1">"Broken"</h4>
+                        <p class="text-xxs pl-1 -mt-1 leading-tight truncate">Pain so deep you could drown
+                        </p> -->
+                      </div>
+                 
+              </div>
+                  </div>
+                  </div>
+              </div>
+          </div>
+       </div>
+    </section> 
+    <div id="warning-message">
+      <img class="warningLogo" src="./images/logo/logo.png" alt="website logo">
+      <h2>this website is only viewable in landscape mode</h2>
+    </div>  
+    <script src="../src/js/carousel.js"></script> 
+    <script src="../src/js/main.js"></script>  
+</body>
+</html>

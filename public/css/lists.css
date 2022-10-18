@@ -1,0 +1,75 @@
+body{
+    overflow: hidden;
+}
+
+.carousel {
+    --current-slide: 0;
+    /* we set position relative so absolute position works properly for the buttons */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  a{
+      padding-left: 1%;
+      font-size: 1.05rem;
+  }
+
+  .carousel-button {
+    /* vertically centering the buttons */
+    position: absolute;
+    top: 73%;
+    transform: translateY(-50%);
+    z-index: 5;
+  
+    /* basic styling */
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 5%;
+    background-color: rgba(0, 0, 0, 1);
+    border: none;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    transition: color 0.1s;
+  }
+
+  .carousel-button:hover {
+    color: rgba(0, 0, 0, 0.7);
+    background-color: purple;
+  }
+  
+  .carousel-button_next {
+    /* The "next slide button" will be at the right */
+    right: 0;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s;
+    transform: translateX(calc(-100% * var(--current-slide)));
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+  }
+  
+  li:nth-child(even){
+      background: rgba(0, 0, 0, 0.5);
+  }
+  
+  li:hover{
+      background: purple;
+  }
+
+  #whiteLine{
+    background: white;
+  }
+
+  /* @media screen and (min-width: 500px) {
+    .carousel-button {
+      font-size: 2rem;
+      margin: 1rem;
+      background: rgba(0, 0, 0, 0.5);
+      border: none;
+    }
+  } */

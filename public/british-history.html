@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/hamburger.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <section id="wrapper">
+        <div class="carousel" data-carousel>
+          <div class="carousel-buttons">
+            <button
+              class="carousel-button carousel-button_previous"
+              data-carousel-button-previous
+            >
+            <span class="">
+              <img src="./images/svg/arrow-left.svg" alt="">
+              </span>
+            </button>
+            <button class="carousel-button carousel-button_next"
+              data-carousel-button-next
+            >
+            <span class="">
+              <img src="./images/svg/arrow-right.svg" alt="">
+              </span>
+            </button>
+          </div>
+
+          <div class="col">
+            <div onclick="goBack()" class="con">
+              <div class="bar arrow-top-r"></div>
+              <div class="bar arrow-middle-r"></div>
+              <div class="bar arrow-bottom-r"></div>
+            </div>
+          </div>
+
+          <div class="slides" data-carousel-slides-container>
+            <div class="slide h-screen bg-cover bg-center" style="background-image: url('./images/halls/left.png')">
+              <div class="wrapper h-full">
+              <div class="flex flex-row justify-center items-center -ml-28 md:-ml-32 lg:-ml-48 mt-20 md:-mt-16 md:min-h-full md:content-center">
+                <div class="w-60 lg:w-96 h-min md:-ml-8 md:mt-8 lg:-mt-4 bg-cover bg-center">
+                      <img src="./images/gallery/british/britishintro.png" class="zoomD" alt="">
+              </div>
+            </div>
+            </div>
+            </div>
+
+
+
+            <div class="slide h-screen bg-cover bg-center" style="background-image: url('./images/halls/middle.png')">
+              <div class="wrapper h-full">
+              <div class="flex flex-row justify-center items-center -ml-12 md:-ml-32 lg:-ml-40 mt-32 md:-mt-2 md:min-h-full md:content-center">
+                <div class="w-24 md:w-32 lg:w-44 h-auto md:ml-12 bg-cover bg-center">
+                  <img src="./images/gallery/british/rbh1.jpg"  class="zoomE cursor-zoom-in" alt="">   
+                </div>
+                <div class="w-12 lg:w-24 h-auto md:ml-2 bg-cover bg-center">
+                    <div class="flex flex-col m-auto w-32 lg:w-48 ml-8">
+                      <img src="./images/gallery/british/cards/rbh1card.png" class=" hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                      <!-- <h4 class="text-xxs font-bold p-1">Untitled</h4>
+                      <p class="text-xxs pl-1 -mt-1 leading-tight">It wasn't exactly love at first sight, but it was deeper than that. A sense of belonging to a .
+                      </p> -->
+                    </div>    
+                </div>
+            </div>
+            </div>
+            </div>
+
+            <div class="slide h-screen bg-cover bg-center" style="background-image: url('./images/halls/middle.png')">
+              <div class="wrapper h-full">
+              <div class="flex flex-row justify-center items-center -ml-12 md:-ml-32 lg:-ml-40 mt-32 md:-mt-2 md:min-h-full md:content-center">
+                <div class="w-24 md:w-32 lg:w-44 h-auto md:ml-12 bg-cover bg-center">
+                  <img src="./images/gallery/british/rbh2.jpg" class="zoomE cursor-zoom-in" alt="">   
+                </div>
+                <div class="w-14 lg:w-24 h-auto md:ml-2 bg-cover bg-center">
+                    <div class="flex flex-col m-auto w-28 md:w-32 lg:w-48 ml-8">
+                      <img src="./images/gallery/british/cards/rbh2card.png" class=" hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                      <!-- <h4 class="text-xxs font-bold p-1">Untitled</h4>
+                      <p class="text-xxs pl-1 -mt-1 leading-tight">It wasn't exactly love at first sight, but it was deeper than that. A sense of belonging to a .
+                      </p> -->
+                    </div>    
+                </div>
+            </div>
+            </div>
+            </div>
+
+
+            <div class="slide h-screen bg-cover bg-center" style="background-image: url('./images/halls/middle.png')">
+              <div class="wrapper h-full">
+              <div class="flex flex-row justify-center items-center -ml-12 md:-ml-32 lg:-ml-40 mt-32 md:-mt-2 md:min-h-full md:content-center">
+                <div class="w-24 md:w-32 lg:w-44 h-auto md:ml-12 bg-cover bg-center">
+                  <img src="./images/gallery/british/rbh3.jpg" class="zoomE cursor-zoom-in" alt="">   
+                </div>
+                <div class="w-14 lg:w-24 h-auto md:ml-2 bg-cover bg-center">
+                    <div class="flex flex-col m-auto w-28 md:w-32 lg:w-48 ml-8">
+                      <img src="./images/gallery/british/cards/rbh3card.png" class=" hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                      <!-- <h4 class="text-xxs font-bold p-1">Untitled</h4>
+                      <p class="text-xxs pl-1 -mt-1 leading-tight">It wasn't exactly love at first sight, but it was deeper than that. A sense of belonging to a .
+                      </p> -->
+                    </div>    
+                </div>
+            </div>
+            </div>
+            </div>
+
+            <div class="slide h-screen bg-cover bg-center" style="background-image: url('./images/halls/middle.png')">
+              <div class="wrapper h-full">
+              <div class="flex flex-row justify-center items-center -ml-12 md:-ml-32 lg:-ml-40 mt-32 md:-mt-2 md:min-h-full md:content-center">
+                <div class="w-24 md:w-32 lg:w-44 h-auto md:ml-12 bg-cover bg-center">
+                  <img src="./images/gallery/british/rbh4.jpg" class="zoomE cursor-zoom-in" alt="">   
+                </div>
+                <div class="w-14 lg:w-24 h-auto md:ml-2 bg-cover bg-center">
+                    <div class="flex flex-col m-auto w-24 md:w-32 lg:w-48 ml-8">
+                      <img src="./images/gallery/british/cards/rbh4card.png" class=" hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                      <!-- <h4 class="text-xxs font-bold p-1">Untitled</h4>
+                      <p class="text-xxs pl-1 -mt-1 leading-tight">It wasn't exactly love at first sight, but it was deeper than that. A sense of belonging to a .
+                      </p> -->
+                    </div>    
+                </div>
+            </div>
+            </div>
+            </div>
+
+            <div class="slide h-screen bg-cover bg-center" style="background-image: url('./images/halls/middle.png')">
+              <div class="wrapper h-full">
+              <div class="flex flex-row justify-center items-center -ml-12 md:-ml-32 lg:-ml-40 mt-32 md:-mt-2 md:min-h-full md:content-center">
+                <div class="w-24 md:w-32 lg:w-44 h-auto md:ml-12 bg-cover bg-center">
+                  <img src="./images/gallery/british/rbh5.jpg" class="zoomE cursor-zoom-in" alt="">   
+                </div>
+                <div class="w-14 lg:w-24 h-auto md:ml-2 bg-cover bg-center">
+                    <div class="flex flex-col m-auto w-24 md:w-32 lg:w-48 ml-8">
+                      <img src="./images/gallery/british/cards/rbh5card.png" class=" hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                      <!-- <h4 class="text-xxs font-bold p-1">Untitled</h4>
+                      <p class="text-xxs pl-1 -mt-1 leading-tight">It wasn't exactly love at first sight, but it was deeper than that. A sense of belonging to a .
+                      </p> -->
+                    </div>    
+                </div>
+            </div>
+            </div>
+            </div>
+
+            <div class="slide h-screen bg-cover bg-center" style="background-image: url('./images/halls/middle.png')">
+              <div class="wrapper h-full">
+              <div class="flex flex-row justify-center items-center -ml-12 md:-ml-32 lg:-ml-40 mt-32 md:-mt-2 md:min-h-full md:content-center">
+                <div class="w-24 md:w-32 lg:w-44 h-auto md:ml-12 bg-cover bg-center">
+                  <img src="./images/gallery/british/rbh6.jpg" class="zoomE cursor-zoom-in" alt="">   
+                </div>
+                <div class="w-14 lg:w-24 h-auto md:ml-2 bg-cover bg-center">
+                    <div class="flex flex-col m-auto w-24 md:w-32 lg:w-48 ml-8">
+                      <img src="./images/gallery/british/cards/rbh6card.png" class=" hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                      <!-- <h4 class="text-xxs font-bold p-1">Untitled</h4>
+                      <p class="text-xxs pl-1 -mt-1 leading-tight">It wasn't exactly love at first sight, but it was deeper than that. A sense of belonging to a .
+                      </p> -->
+                    </div>    
+                </div>
+            </div>
+            </div>
+            </div>
+
+            <div class="slide h-screen bg-cover bg-center" style="background-image: url('./images/halls/right.png')">
+              <div class="wrapper h-full">
+              <div class="flex flex-row justify-center items-center -ml-12 md:ml-0 lg:-ml-4 mt-32 md:-mt-2 md:min-h-full md:content-center">
+                <div class="w-24 md:w-32 lg:w-44 h-auto md:ml-12 bg-cover bg-center">
+                  <img src="./images/gallery/british/rbh7.jpg" class="zoomE cursor-zoom-in" alt="">   
+                </div>
+                <div class="w-14 lg:w-24 h-auto md:ml-2 bg-cover bg-center">
+                    <div class="flex flex-col m-auto w-32 lg:w-48 ml-8">
+                      <img src="./images/gallery/british/cards/rbh7card.png" class=" hover:bg-purple-500 duration-200 cursor-pointer zoomE" alt="">
+                      <!-- <h4 class="text-xxs font-bold p-1">Untitled</h4>
+                      <p class="text-xxs pl-1 -mt-1 leading-tight">It wasn't exactly love at first sight, but it was deeper than that. A sense of belonging to a .
+                      </p> -->
+                    </div>    
+                </div>
+            </div>
+            </div>
+            </div>
+
+            
+
+          </div>
+       </div>
+    </section>   
+    <div id="warning-message">
+      <img class="warningLogo" src="./images/logo/logo.png" alt="website logo">
+      <h2>this website is only viewable in landscape mode</h2>
+  </div>
+    <script src="../src/js/carousel.js"></script>
+    <script src="../src/js/main.js"></script>   
+</body>
+</html>
